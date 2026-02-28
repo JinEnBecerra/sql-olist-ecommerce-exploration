@@ -1,6 +1,6 @@
 /*
 Question: How has revenue changed over time?
-Tables used: orders, payments
+Tables used: orders, order_payments
 Logic: 
 - Only analyzing orders that are completed (order_status = 'delivered')
 - Cast order_purchase_timestamp to timestamp type
