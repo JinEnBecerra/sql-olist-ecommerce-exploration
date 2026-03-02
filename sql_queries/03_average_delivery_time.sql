@@ -1,6 +1,6 @@
 /*
 Question: How has average delivery time changed over time?
-Tables: orders
+Table: orders
 
 Logic:
 - Filter orders where order_status = 'delivered'
