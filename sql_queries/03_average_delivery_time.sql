@@ -19,10 +19,8 @@ WITH clean_orders AS (
         orders
     WHERE
         order_status = 'delivered'
-        AND order_delivered_customer_date IS NOT NULL
-        AND order_delivered_customer_date != ''
-        AND order_purchase_timestamp IS NOT NULL
-        AND order_purchase_timestamp != ''
+        AND nullif(order_delivered_customer_date, '') IS NOT NULL
+        AND nullif(order_purchase_timestamp, '') IS NOT NULL
         AND order_delivered_customer_date::timestamp >= order_purchase_timestamp::timestamp
         AND order_delivered_customer_date::timestamp - order_purchase_timestamp::timestamp <= INTERVAL '60 days'
 ),
