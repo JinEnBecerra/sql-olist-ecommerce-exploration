@@ -1,6 +1,7 @@
 /*
 Question: How has revenue changed over time?
 Tables used: orders, order_payments
+
 Logic: 
 - Only analyzing orders that are completed (order_status = 'delivered')
 - Cast order_purchase_timestamp to timestamp type
@@ -17,8 +18,7 @@ FROM (
         date_trunc('month', order_purchase_timestamp::timestamp) AS order_month,
         payment_value 
     FROM orders o
-    INNER JOIN order_payments p
-        ON o.order_id = p.order_id
+    INNER JOIN order_payments p ON o.order_id = p.order_id
     WHERE o.order_status = 'delivered'
 ) t
 GROUP BY order_month
