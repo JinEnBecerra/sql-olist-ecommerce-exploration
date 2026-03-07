@@ -26,24 +26,19 @@ WITH deduped_reviews AS (
     FROM order_reviews
     GROUP BY order_id
 ),
-
 clean_data AS (
     SELECT
         o.order_id,
         p.product_category_name AS product_category,
         orv.review_score
     FROM order_items oi
-    INNER JOIN orders o
-        ON o.order_id = oi.order_id
-    INNER JOIN deduped_reviews orv
-        ON orv.order_id = oi.order_id
-    INNER JOIN products p
-        ON p.product_id = oi.product_id
+    INNER JOIN orders o ON o.order_id = oi.order_id
+    INNER JOIN deduped_reviews orv ON orv.order_id = oi.order_id
+    INNER JOIN products p ON p.product_id = oi.product_id
     WHERE
         o.order_status = 'delivered'
         AND NULLIF(p.product_category_name, '') IS NOT NULL
 ),
-
 product_metrics AS (
     SELECT
         product_category,
@@ -53,7 +48,6 @@ product_metrics AS (
     GROUP BY product_category
     HAVING AVG(review_score) < 3.5
 )
-
 SELECT
     product_category,
     sales_volume,
