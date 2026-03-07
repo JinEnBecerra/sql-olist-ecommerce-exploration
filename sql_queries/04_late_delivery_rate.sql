@@ -1,6 +1,5 @@
 /*
 Question: What percentage of orders were delivered later than the estimated delivery date?
-
 Table: orders
 
 Logic:
@@ -11,17 +10,15 @@ Logic:
 - Filter out unusually long delivery durations (> 60 days) to avoid operational anomalies
 
 - Define late delivery
-- Flag orders where order_delivered_customer_date > order_estimated_delivery_date
+ - Flag orders where order_delivered_customer_date > order_estimated_delivery_date
 
 - Calculate late delivery rate
-- Late delivery rate = COUNT(late orders) / COUNT(total delivered orders)
+ - Late delivery rate = COUNT(late orders) / COUNT(total delivered orders)
 
 - Add monthly segmentation
 - Group by order month to analyze trend over time
 */
--- order_purchase_timestamp
--- order_delivered_customer_date
--- order_estimated_delivery_date
+
 WITH
   clean_orders AS (
     SELECT
@@ -45,18 +42,9 @@ WITH
 )
 SELECT
     to_char(purchase_month, 'YYYY-Mon') AS purchase_month_formatted,
-    count(*) FILTER (
-    WHERE
-        is_late = TRUE
-    ) AS late_orders,
+    count(*) FILTER (WHERE is_late = TRUE) AS late_orders,
     count(*) AS total_orders,
-    round(
-    count(*) FILTER (
-      WHERE
-        is_late = TRUE
-    )::NUMERIC / NULLIF(count(*), 0) * 100,
-    1
-  ) AS late_delivery_rate
+    round(count(*) FILTER (WHERE is_late = TRUE)::NUMERIC / NULLIF(count(*), 0) * 100, 1) AS late_delivery_rate
 FROM
     late_delivery_metrics
 GROUP BY
