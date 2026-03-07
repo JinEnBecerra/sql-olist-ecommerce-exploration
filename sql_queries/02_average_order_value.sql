@@ -1,6 +1,7 @@
 /*
 Question: What is the trend of average order value (AOV) over time?
-Tables used: orders, order_payments
+Tables: orders, order_payments
+
 Logic: 
 - Calculate total revenue to understand overall business growth
 - Calculate order volume to measure customer traffic and purchasing activity
@@ -15,12 +16,10 @@ WITH monthly_metrics AS (
         date_trunc('month', order_purchase_timestamp::timestamp) AS order_month,
         SUM(payment_value) AS monthly_revenue,
         COUNT(DISTINCT o.order_id) AS order_count,
-        round(SUM(payment_value)::NUMERIC / COUNT(DISTINCT o.order_id), 2) AS aov-- cast to numeric required for ROUND, avoids double precision limitation
+        round(SUM(payment_value)::NUMERIC / COUNT(DISTINCT o.order_id), 2) AS aov -- cast to numeric required for ROUND, avoids double precision limitation
     FROM
         orders o
-    INNER JOIN order_payments p
-ON
-        o.order_id = p.order_id
+    INNER JOIN order_payments p ON o.order_id = p.order_id
     WHERE
         order_status = 'delivered'
     GROUP BY
