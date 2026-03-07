@@ -23,7 +23,6 @@ WITH clean_items AS (
         NULLIF(p.product_category_name, '') IS NOT NULL
         AND o.order_status = 'delivered'
 ),
-
 category_summary AS (
     SELECT
         category,
