@@ -13,6 +13,7 @@ Data Quality Check:
 Verified no orphaned orders (orders without matching customers) before JOIN.
 Safe to use INNER JOIN without data loss.
 */
+
 WITH order_revenue AS (
     SELECT
         order_id,
@@ -25,10 +26,8 @@ SELECT
     c.customer_state AS state,
     SUM(r.revenue) AS revenue
 FROM orders o
-INNER JOIN order_revenue r
-    ON o.order_id = r.order_id
-INNER JOIN customers c
-    ON o.customer_id = c.customer_id
+INNER JOIN order_revenue r ON o.order_id = r.order_id
+INNER JOIN customers c ON o.customer_id = c.customer_id
 WHERE
     o.order_status = 'delivered'
 GROUP BY
