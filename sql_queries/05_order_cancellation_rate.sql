@@ -6,6 +6,7 @@ Logic:
 - Data cleaning
     - Remove rows where order_purchase_timestamp is NULL
     - Only keep orders with status 'delivered' or 'canceled'
+
 - Group by order month to analyze trend over time
 - Flag cancelled orders where order_status = 'canceled'
 - Cancellation rate = COUNT(cancelled orders) / COUNT(total orders)
@@ -36,8 +37,7 @@ SELECT
     TO_CHAR(order_month, 'YYYY-Mon') AS order_month_formatted,
     cancelled_orders,
     total_orders,
-    ROUND(
-        cancelled_orders::NUMERIC / NULLIF(total_orders, 0) * 100, 1) AS cancellation_rate
+    ROUND(cancelled_orders::NUMERIC / NULLIF(total_orders, 0) * 100, 1) AS cancellation_rate
 FROM
     cancellation_metrics
 ORDER BY
