@@ -11,6 +11,7 @@ Logic:
 */
 
 SELECT 
+    order_month,
     to_char(order_month, 'YYYY-Mon') AS order_month_formatted, 
     SUM(payment_value) AS monthly_revenue
 FROM (
