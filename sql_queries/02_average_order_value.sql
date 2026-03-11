@@ -27,6 +27,7 @@ WITH monthly_metrics AS (
 )
 
 SELECT
+    order_month,
     to_char(order_month, 'YYYY-Mon') AS order_month_formatted,
     monthly_revenue,
     order_count,
