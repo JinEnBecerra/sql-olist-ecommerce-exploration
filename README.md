@@ -5,8 +5,8 @@ A hands-on SQL exploration of the Olist e-commerce dataset, documenting my learn
 I’m currently working through a set of business questions to better understand the dataset from a real-world analytics perspective. This README will continue to evolve as the project progresses.
 
 **Future updates will include:**
-- Business questions
-- Visualizations to support key findings 
+- Business questions (All uploaded)
+- Visualizations to support key findings (currently working on)
 - Insights and business interpretations  
 - A brief overview of the dataset and schema
 
