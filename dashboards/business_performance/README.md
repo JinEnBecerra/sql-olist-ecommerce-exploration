@@ -1,10 +1,6 @@
 ## Business Performance Dashboard  
 
 
-🔗 View Interactive Dashboard on Tableau Public:
-https://public.tableau.com/shared/27T87Q7BH?:display_count=n&:origin=viz_share_link
-
-
 **Overview:**  
 This dashboard provides a high-level view of business performance from 2016 to 2018, focusing on revenue trends, customer spending behavior, and order stability.
 
