@@ -4,7 +4,7 @@
 **Overview:**  
 This dashboard identifies key contributors to revenue by analyzing geographic distribution, product categories, sellers, and product performance.
 
-![Dashboard Preview](../../images/revenue.drivers.png)
+![Dashboard Preview](../../images/revenue_drivers.png)
 
 ---
 
