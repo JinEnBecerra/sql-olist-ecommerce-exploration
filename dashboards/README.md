@@ -7,7 +7,7 @@ This project explores Brazilian e-commerce data from 2016 to 2018, focusing on o
 https://public.tableau.com/shared/27T87Q7BH?:display_count=n&:origin=viz_share_link
 
 
-![Dashboard Preview](images/business_performance.png)
+
 ![Dashboard Preview](../../images/business_performance.png)
 
 ---
