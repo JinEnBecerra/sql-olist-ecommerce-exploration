@@ -5,7 +5,7 @@
 **Overview:**  
 This dashboard evaluates delivery performance and customer satisfaction from 2016 to 2018, highlighting trends in delivery time, late delivery rates, and review scores.
 
-![Dashboard Preview](../images/delivery_customer_experience.png)
+![Dashboard Preview](../../images/delivery_customer_experience.png)
 
 
 ---
