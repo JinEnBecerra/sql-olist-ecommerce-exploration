@@ -1,8 +1,6 @@
 
 ## Delivery & Customer Experience Dashboard  
 
-🔗 View Interactive Dashboard on Tableau Public:
-https://public.tableau.com/shared/27T87Q7BH?:display_count=n&:origin=viz_share_link
 
 
 **Overview:**  
