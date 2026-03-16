@@ -1,6 +1,9 @@
 
 ## Delivery & Customer Experience Dashboard  
 
+🔗 View Interactive Dashboard on Tableau Public:
+https://public.tableau.com/shared/27T87Q7BH?:display_count=n&:origin=viz_share_link
+
 
 **Overview:**  
 This dashboard evaluates delivery performance and customer satisfaction from 2016 to 2018, highlighting trends in delivery time, late delivery rates, and review scores.
