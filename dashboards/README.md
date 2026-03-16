@@ -2,6 +2,9 @@
 
 This project analyzes Brazilian e-commerce data from 2016 to 2018, focusing on business performance, customer experience, and key revenue drivers.
 
+
+![Dashboard Preview](images/business_performance.png)
+
 ---
 
 ### 1. Business Performance  
