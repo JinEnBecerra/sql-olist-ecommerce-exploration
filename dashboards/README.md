@@ -1,6 +1,10 @@
 ## Dashboards Overview  
 
-This project analyzes Brazilian e-commerce data from 2016 to 2018, focusing on business performance, customer experience, and key revenue drivers.
+This project explores Brazilian e-commerce data from 2016 to 2018, focusing on overall business performance, customer experience, and key revenue drivers.
+
+
+🔗 **View Interactive Dashboard on Tableau Public:**  
+https://public.tableau.com/shared/27T87Q7BH?:display_count=n&:origin=viz_share_link
 
 
 ![Dashboard Preview](images/business_performance.png)
