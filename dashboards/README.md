@@ -8,7 +8,7 @@ https://public.tableau.com/shared/27T87Q7BH?:display_count=n&:origin=viz_share_l
 
 
 ![Dashboard Preview](images/business_performance.png)
-![Dashboard](../../images/business_performance.png)
+![Dashboard Preview](../../images/business_performance.png)
 
 ---
 
