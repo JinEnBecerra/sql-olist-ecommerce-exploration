@@ -26,23 +26,29 @@ The dataset covers transactions from 2016 to 2018.
 
 ---
 
-## Dashboard  
+## Interactive Dashboards
 
-🔗 Tableau Public:  
-[https://public.tableau.com/shared/3W429M68Q?:display_count=n&:origin=viz_share_link]
+🔗 Check out my Tableau Public for more interactive dashboards:  
+https://public.tableau.com/shared/3W429M68Q?:display_count=n&:origin=viz_share_link
 
-The project includes three dashboards:
+This project includes three dashboards designed to analyze business performance, customer experience, and key revenue drivers.
 
 ### 1. Business Performance  
 Shows revenue growth over time, with a clear peak in late 2017, along with stable AOV and relatively low cancellation rates.  
 
+![Dashboard Preview](/images/business_performance.png)
+
 ### 2. Delivery & Customer Experience  
 Highlights improvements in delivery time and late delivery rates after the early stage, while review scores remain stable.  
+
+![Dashboard Preview](/images/delivery_customer_experience.png)
 
 ### 3. Revenue Drivers  
 Shows that revenue is concentrated in a few states (e.g., SP), categories, and sellers, and identifies categories with high sales but lower ratings.
 
----
+![Dashboard Preview](/images/revenue_drivers.png)
+
+
 
 ## Key Insights  
 
