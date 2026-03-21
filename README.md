@@ -29,7 +29,7 @@ The dataset covers transactions from 2016 to 2018.
 ## Interactive Dashboards
 
 🔗 Check out my Tableau Public for more interactive dashboards:  
-https://public.tableau.com/shared/3W429M68Q?:display_count=n&:origin=viz_share_link
+[https://public.tableau.com/shared/3W429M68Q?:display_count=n&:origin=viz_share_link](https://public.tableau.com/shared/7Y6JDNGKD?:display_count=n&:origin=viz_share_link)
 
 This project includes three dashboards designed to analyze business performance, customer experience, and key revenue drivers.
 
