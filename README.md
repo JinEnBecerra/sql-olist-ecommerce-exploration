@@ -52,12 +52,10 @@ Shows that revenue is concentrated in a few states (e.g., SP), categories, and s
 
 ## Key Insights  
 
-- Revenue increased steadily over time, with a peak in late 2017  
-- Growth was mainly driven by more orders, not higher spending per order  
-- Delivery performance improved after the early stage of the platform  
-- Customer satisfaction remained consistently high  
-- Revenue is concentrated among a small number of states, categories, and sellers  
-- Some high-selling product categories have relatively low ratings, which may impact long-term customer satisfaction  
+- Revenue grew steadily through 2017, driven by order volume rather than higher spend per order — suggesting that future growth requires expanding customer acquisition, not increasing AOV.
+- Delivery performance improved significantly after the platform's early stage; since delivery time correlates directly with review scores, logistics quality remains a key lever for customer satisfaction.
+- Customer satisfaction stayed consistently high, but several top-selling categories carry below-average review scores — a retention risk that warrants closer attention to seller quality in those categories.
+- Revenue is heavily concentrated in São Paulo and a small number of sellers and categories, pointing to both geographic expansion opportunity and supply chain concentration risk.
 
 For more detailed analysis, see [insight.md](./insight.md)
 
@@ -69,14 +67,6 @@ For more detailed analysis, see [insight.md](./insight.md)
 
 - Some timestamp fields in the dataset were stored as text and were converted during analysis  
 - Early data (2016) shows more volatility due to low order volume  
-
----
-
-## What I Learned  
-
-- How to structure a full data analysis project from raw data to dashboard  
-- How to identify and explain business trends using data  
-- How to present findings clearly for non-technical audiences
 
 ---
 
